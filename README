@@ -1,4 +1,4 @@
-Net::DNS::Nslookup version 0.01
+Net::DNS::Nslookup version 0.02
 ==================================
 
   Nslookup module provides simple way to resolve DNS name to 
@@ -19,6 +19,6 @@ This module requires "nslookup" binary.
 
 COPYRIGHT AND LICENCE
 
-  Copyright (c) 2007 Paul Grinberg. All rights reserved.
+  Copyright (c) 2011 Paul Greenberg. All rights reserved.
   This program is free software; you can redistribute it
   and/or modify it under the same terms as Perl itself.

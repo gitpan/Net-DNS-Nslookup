@@ -4,5 +4,5 @@ use ExtUtils::MakeMaker;
 WriteMakefile(
     NAME          => 'Net::DNS::Nslookup',
     VERSION_FROM  => 'lib/Net/DNS/Nslookup.pm',
-    AUTHOR        => 'Paul Grinberg <grinberg@isrcomputing.com>',
+    AUTHOR        => 'Paul Greenberg <list@isrcomputing.com>',
 );
