@@ -4,4 +4,6 @@ Revision history for Perl Net-DNS-Nslookup Module.
 	- original version;
 0.02  Tue Mar  22 13:41:33 2011
         - major fixes;
+0.03  Tue Mar 22 20:22:33 EDT 2011
+        - minor fix to testing
 

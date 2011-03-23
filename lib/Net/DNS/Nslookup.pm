@@ -6,7 +6,7 @@ package Net::DNS::Nslookup;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 0.02;
+$VERSION = 0.03;
 
 $|=1;
 
@@ -83,39 +83,36 @@ __END__
 
 =head1 SYNOPSIS
 
-use strict;
-use Net::DNS::Nslookup;
-
-printf("%s\n", "# Resolving multiple domains");
-
-my @sites = ("www.google.com","www.cnn.com","www.jobs.com");
-
-foreach my $dnsname (@sites) {
- my $dns_resp = Net::DNS::Nslookup->get_ips($dnsname);
- printf("%s\n", $dns_resp);
-}
-
-printf("%s\n", "# Resolving single domain www.msn.com");
-
-my $nslookup = Net::DNS::Nslookup->get_ips("www.msn.com");
-printf("%s\n", $nslookup);
-
-Output:
-# Resolving multiple domains
-www.google.com,74.125.226.176
-www.google.com,74.125.226.177
-www.google.com,74.125.226.178
-www.google.com,74.125.226.179
-www.google.com,74.125.226.180
-www.cnn.com,157.166.226.25
-www.cnn.com,157.166.226.26
-www.cnn.com,157.166.255.18
-www.cnn.com,157.166.255.19
-www.cnn.com,157.166.224.25
-www.cnn.com,157.166.224.26
-www.jobs.com,208.71.192.206
-# Resolving single domain www.msn.com
-www.msn.com,65.55.17.25
+  use strict;
+  use Net::DNS::Nslookup;
+  
+  printf("%s\n", "# Resolving multiple domains");
+  my @sites = ("www.google.com","www.cnn.com","www.jobs.com");
+  foreach my $dnsname (@sites) {
+   my $dns_resp = Net::DNS::Nslookup->get_ips($dnsname);
+   printf("%s\n", $dns_resp);
+  }
+	
+  printf("%s\n", "# Resolving single domain www.msn.com");
+  my $nslookup = Net::DNS::Nslookup->get_ips("www.msn.com");
+  printf("%s\n", $nslookup);
+	
+  Output:
+  # Resolving multiple domains
+  www.google.com,74.125.226.176
+  www.google.com,74.125.226.177
+  www.google.com,74.125.226.178
+  www.google.com,74.125.226.179
+  www.google.com,74.125.226.180
+  www.cnn.com,157.166.226.25
+  www.cnn.com,157.166.226.26
+  www.cnn.com,157.166.255.18
+  www.cnn.com,157.166.255.19
+  www.cnn.com,157.166.224.25
+  www.cnn.com,157.166.224.26
+  www.jobs.com,208.71.192.206
+  # Resolving single domain www.msn.com
+  www.msn.com,65.55.17.25
 
 =head1 METHODS
 

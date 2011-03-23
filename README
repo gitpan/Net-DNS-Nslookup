@@ -1,4 +1,4 @@
-Net::DNS::Nslookup version 0.02
+Net::DNS::Nslookup version 0.03
 ==================================
 
   Nslookup module provides simple way to resolve DNS name to 
